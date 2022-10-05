@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--main-bcg-cl);
+    border-bottom: 1px solid #ECECEC;
+    @media screen and(max-width: 767px) {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+&__logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: inherit;
+}
+
+&__logo--accent {
+    color: var(--accent-txt-cl);
+}
+}

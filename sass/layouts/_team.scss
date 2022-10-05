@@ -1,0 +1,103 @@
+.team {
+    background-color: var(--team-bdc-cl);
+
+
+&__title {
+    font-family: 'Roboto';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--main-txt-cl);
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 28px;
+        line-height: calc(33 / 28);
+    }
+}
+
+&__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) 
+    {
+     flex-direction: row;
+     flex-wrap: wrap; 
+    }
+   @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+   }
+
+}
+
+
+&__card {
+    background: #FFFFFF;
+
+        padding-top: 30px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: 1200px){
+            padding: 30px 0;
+        }
+}
+
+&__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 768px){
+        width: calc((100% - 30px)/2);
+    }
+}
+
+&__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    color: var(--main-txt-cl);
+
+}
+
+&__position {
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+    color: var(--grey-txt-cl);
+    margin-top: 10px;
+}
+}
+
+.socials {
+    background-color: inherit;
+
+
+&__list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 16px;
+}
+
+&__icon {
+    fill: currentColor;
+
+}
+
+&__link:hover,
+&__link:focus {
+    color: var(--light-txt-cl);
+    background-color: var(--accent-bgc-cl);
+}
+}

@@ -1,0 +1,32 @@
+body {
+
+    font-family: var(--main-font);
+    font-style: 400;
+    font-size: 14px;
+    letter-spacing: 0, 03em;
+    color: var(--main-txt-cl);
+    background-color: var(--main-bcg-cl);
+}
+
+.section {
+    padding: 60px 0;
+
+    // desctop
+    @media screen and (min-width: 1200px) 
+    {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+ }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
