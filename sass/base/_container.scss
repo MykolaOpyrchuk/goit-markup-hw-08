@@ -7,6 +7,7 @@
 // desctop styles
 .container {
     max-width: 480px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -15,13 +16,12 @@
 
 // tablet
     @media screen and (min-width: 768px) {
-        max-width: 738px;
+        max-width: 768px;
     }
      
 // desctop
     @media screen and (min-width: 1200px) {
         max-width: 1200px;
     }
-    outline: 2px solid blueviolet;
 }
     

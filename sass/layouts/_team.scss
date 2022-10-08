@@ -4,15 +4,16 @@
 
 &__title {
     font-family: 'Roboto';
-    font-size: 36px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     color: var(--main-txt-cl);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 1199px) {
         font-size: 28px;
         line-height: calc(33 / 28);
+        margin-bottom: 50px;
     }
 }
 
@@ -42,11 +43,14 @@
         padding-bottom: 24px;
 
         @media screen and (min-width: 1200px){
-            padding: 30px 0;
+            padding-bottom: 0;
+            padding-top: 30px;
         }
 }
 
 &__item {
+    width: 100%;
+    height: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -55,6 +59,9 @@
     @media screen and (min-width: 768px){
         width: calc((100% - 30px)/2);
     }
+        @media screen and (min-width: 1200px){
+            width: auto;
+        }
 }
 
 &__heading {
@@ -88,6 +95,10 @@
     justify-content: center;
     padding-left: 0;
     margin-top: 16px;
+    padding-bottom: 24px;
+    @media screen and(min-width: 1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 &__icon {
