@@ -1,9 +1,13 @@
 .header {
     background-color: var(--main-bcg-cl);
     border-bottom: 1px solid #ECECEC;
+    padding: 16px 15px;
     @media screen and(max-width: 767px) {
         display: flex;
         align-items: center;
+    }
+    @media screen and(min-width: 768px) {
+        padding: 0;
     }
 
 
